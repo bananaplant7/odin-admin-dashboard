@@ -60,23 +60,32 @@ img[src$="dashboard.svg"] {
 }
 
 #headerTop {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
 }
 
-#headerTop > * {
-    gap: 10px;
-    margin: 20px;
+#headerTop > * { /* applied to #search & #headerTopRight */
+    /* border: 1px solid black; */
+    display: grid; 
+    padding: 0px 60px;
+    align-items: center;
 }
 
 #search {
-    display: flex;
+    grid-template-columns: 1fr 20fr;
+}
+
+input[type="search"] {
+    border-radius: 5px;
+    border: transparent;
+    background-color: lightgrey;
+    height: 30px;
+    width: 700px;
 }
 
 #headerTopRight {
-    display: flex;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 img[src*="profile pics"] {
