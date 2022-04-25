@@ -52,11 +52,9 @@ img[src$="dashboard.svg"] {
 
 #header {
     background-color: #F5F5F5;
-
     display: grid;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    
 }
 
 #headerTop {
@@ -68,12 +66,13 @@ img[src$="dashboard.svg"] {
 #headerTop > * { /* applied to #search & #headerTopRight */
     /* border: 1px solid black; */
     display: grid; 
-    padding: 0px 60px;
-    align-items: center;
+    padding: 0px 2vw;
+    
 }
 
 #search {
     grid-template-columns: 1fr 20fr;
+    align-items: center;
 }
 
 input[type="search"] {
@@ -81,17 +80,49 @@ input[type="search"] {
     border: transparent;
     background-color: lightgrey;
     height: 30px;
-    width: 700px;
+    max-width: 400px;
 }
 
 #headerTopRight {
     grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 }
 
 img[src*="profile pics"] {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+#headerBottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 2vw;
+}
+
+#headerGreeting {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+#headerButtons {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+#headerButtons > * {
+    font-size: 14px;
+    background-color: #FFA5B0;
+    border-radius: 14px;
+    border: transparent;
+    min-width: 110px;
+    min-height: 40px;
 }
 
 #main-content {
