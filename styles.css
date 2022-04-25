@@ -105,7 +105,13 @@ img[src*="profile pics"] {
     grid-auto-flow: column;
     align-content: center;
     justify-content: start;
+    align-items: center;
     gap: 20px;
+}
+
+#headerGreeting img {
+    height: 64px;
+    width: 64px;
 }
 
 #headerButtons {
