@@ -137,4 +137,34 @@ img[src*="profile pics"] {
     display: grid;
     grid-column: 2 / 3;
     grid-row: 3 / 9;
+    grid-template-columns: 3fr 1fr;
+}
+
+#yourProjects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: green;
+
+    display: grid;
+    
+}
+
+.projectButtons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+
+}
+
+#announcements {
+
+}
+
+#trending {
+
 }
